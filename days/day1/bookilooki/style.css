@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .navbar{
+    width: 50%;
+    height: 100vh;
+    background: yellow;
+    z-index: 1;
+} */
+
+.fa-x{
+    font-size: 30px;
+}
+
+.sectionOne{
+    height: 100vh;
+    width: 100%;
+    background-color: #ADFF14;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.hamburger-container{
+    display: none;
+}
+
+.fa-bars{
+    font-size: 30px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 40px;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    margin: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.line{
+    background: black;
+    width: 30px;
+    height: 4.5px;
+    margin: 5px;
+}
+
+li:hover{
+    border-bottom: 6px solid black;
+}
+
+.header-btns-container{
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-btn{
+    width: 120px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.login{
+    background: none;
+}
+
+.login:hover{
+    background: black;
+    color: #ADFF14;
+}
+
+.header-signup{
+    color: #ADFF14;
+    background: black;
+}
+
+.header-signup:hover{
+    background-color: black;
+    color: white
+}
+
+
+.hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content{
+    padding: 180px;
+}
+
+.bigTitle{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.smallTitle{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.hero-btns-container{
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+}
+
+.hero-btn{
+    width: 200px;
+    height: 70px;
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.hero-demo{
+    background: none;
+    border: 3px solid black;
+}
+
+.hero-demo:hover{
+    background: black;
+    color: #ADFF14;
+}
+
+.hero-signup{
+    background: black;
+    color: #ADFF14;
+}
+
+.hero-signup:hover{
+    color: white
+}
+
+.img{
+    width: 500px
+}
+
+
+@media screen and (max-width: 700px) {
+    ul{
+        display: none;
+    }
+    .header-btns-container{
+        display: none;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .hamburger-container{
+        display: block;
+        /* display: flex; */
+        align-items: center;
+        padding: 40px;
+        cursor: pointer;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        justify-content: flex-start;
+        text-align: center;
+        padding: 40px;
+    }
+    .bigTitle{
+        font-size: 30px;
+    }
+    .smallTitle{
+        font-size: 10px;
+    }
+    .hero-btns-container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .hero-btn{
+        width: 300px;
+        height: 50px;
+        margin: 10px;
+    }
+    .hero-demo{
+        background: white;
+    }
+    .img{
+        width: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 1000px){
+    ul{
+        display: none;
+    }
+    .header-btns-container{
+        display: none;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .content{
+        text-align: center;
+        padding: 40px;
+    }
+    .hamburger-container{
+        /* display: flex; */
+        align-items: center;
+        padding: 40px;
+        cursor: pointer;
+    }
+    .img{
+        width: 200px;
+    }
+    .bigTitle{
+        font-size: 30px;
+    }
+    .smallTitle{
+        font-size: 10px;
+    }
+    .hero-btn{
+        width: 300px;
+        height: 50px;
+    }
+    .hero-btn{
+        margin: 10px;
+    }
+}
